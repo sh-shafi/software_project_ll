@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shafi - A Web Designer and Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+      integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              custom: ["'Alex Brush'", "cursive"],
+              default: ["'Quicksand'", "sans-serif"],
+            },
+            backgroundImage: {
+              design: "url('./images/design.png')",
+              develop: "url('./images/develop.png')",
+            },
+            keyframes: {
+              design: {
+                "0%": { backgroundPosition: "0 0" },
+                "5%, 35%": { backgroundPosition: "0 80px" },
+                "40%, 68%": { backgroundPosition: "0 157px" },
+                "73%, 100%": { backgroundPosition: "0 240px" },
+              },
+              develop: {
+                "0%": { backgroundPosition: "0 -0" },
+                "5%, 35%": { backgroundPosition: "0 -80px" },
+                "40%, 68%": { backgroundPosition: "0 -157px" },
+                "73%, 100%": { backgroundPosition: "0 -240px" },
+              },
+            },
+            animation: {
+              design: "design 10s infinite",
+              develop: "develop 10s infinite 3s",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-default">
+    <header class="fixed top-0 z-10 w-full py-6 border-b border-stone-200">
+      <div
+        class="container flex items-center justify-between max-w-4xl mx-auto"
+      >
+        <a href="#"
+          ><img
+            src="https://avatars.dicebear.com/api/open-peeps/fsjdijij.svg?scale=76"
+            class="h-20 rounded-full bg-stone-300"
+        /></a>
+        <nav class="flex justify-between w-64">
+          <a
+            href="#"
+            class="text-xl text-stone-400 duration-150 hover:text-stone-600"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-xl text-stone-400 duration-150 hover:text-stone-600"
+            >Works</a
+          >
+          <a
+            href="#"
+            class="text-xl text-stone-400 duration-150 hover:text-stone-600"
+            >Notes</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <div class="pt-36 bg-stone-200">
+      <div class="container flex flex-col max-w-4xl mx-auto">
+        <div class="flex items-center justify-between my-20">
+          <img src="./images/cloud.svg" class="translate-y-16" />
+          <div class="text-center">
+            <h1 class="mb-12 text-stone-400 text-9xl font-custom">
+              I'm Shafi.
+            </h1>
+            <p class="text-xl text-stone-400">a web designer.</p>
+          </div>
+          <img src="./images/cloud.svg" class="-translate-y-20" />
+        </div>
+        <img src="./images/hill.svg" />
+      </div>
+    </div>
+
+    <div class="container flex flex-col max-w-4xl mx-auto">
+      <div
+        class="flex flex-col items-center justify-center w-full mt-20 mb-8 text-center"
+      >
+        <img
+          src="https://avatars.dicebear.com/api/open-peeps/fsjdijij.svg?scale=76"
+          class="rounded-full h-36 bg-stone-300"
+        />
+        <h2 class="my-8 text-3xl text-gray-400">Hi.</h2>
+        <p class="max-w-xl text-xl">
+          I'm a web designer / developer based in Dhaka, Bangladesh. I have a
+          passion for web design and love to create for web and mobile devices.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex justify-center w-full">
+      <hr class="w-20 my-16 text-center border-t-8 border-dotted" />
+    </div>
+
+    <h1 class="mb-12 text-5xl text-center text-gray-500">What I can do.</h1>
+    <div class="container flex justify-center max-w-4xl mx-auto mb-16">
+      <div class="flex items-center">
+        <img
+          src="https://avatars.dicebear.com/api/open-peeps/fsjdijij.svg?scale=76"
+          class="h-24 rounded-full bg-stone-200"
+        />
+        <hr class="w-16 border-t-2 border-dotted" />
+        <div
+          class="w-20 h-20 bg-gray-300 bg-cover rounded-full bg-design animate-design"
+        ></div>
+      </div>
+
+      <div class="ml-16">
+        <h1 class="mb-3 text-3xl text-gray-400">Design what you want.</h1>
+        <p class="text-xl text-gray-500 w-96">
+          I like to keep it simple. My goals are to focus on typography, content
+          and conveying the message that you want to send.
+        </p>
+      </div>
+    </div>
+
+    <div class="container flex justify-center max-w-4xl mx-auto mb-16">
+      <div>
+        <h1 class="mb-3 text-3xl text-gray-400">Develop what you need.</h1>
+        <p class="text-xl text-gray-500 w-96">
+          I'm a developer, so I know how to create your website to run across
+          devices using the latest technologies available.
+        </p>
+      </div>
+
+      <div class="flex items-center">
+        <div
+          class="w-20 h-20 ml-16 bg-gray-300 bg-cover rounded-full bg-develop animate-develop"
+        ></div>
+        <hr class="w-16 border-t-2 border-dotted" />
+        <div class="relative overflow-hidden rounded-full bg-stone-200">
+          <img
+            src="https://avatars.dicebear.com/api/open-peeps/fsjdijij.svg?scale=65&translateX=-8"
+            class="h-32"
+          />
+          <img
+            src="./images/desktop-back.png"
+            class="absolute bottom-0 right-0 w-20"
+            alt="desktop-back"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center w-full">
+      <hr class="w-20 my-16 border-t-8 border-dotted" />
+    </div>
+
+    <div class="container flex flex-col max-w-4xl mx-auto mb-8">
+      <div
+        class="flex flex-col items-center justify-center w-full my-10 text-center"
+      >
+        <h2 class="mb-4 text-6xl text-gray-400">I can help.</h2>
+        <h2 class="my-8 text-3xl text-gray-400">
+          I'm currently available for freelance work.
+        </h2>
+        <p class="max-w-xl text-xl">
+          If you have a project that you want to get started, think you need my
+          help with something or just fancy saying hey, then get in touch.
+        </p>
+        <button
+          class="btn px-5 py-3 bg-green-500 rounded-sm my-8 text-xl transition-{background-color} duration-150 hover:bg-green-600 text-slate-100"
+        >
+          <i class="mr-2 far fa-envelope"></i> MESSAGE ME
+        </button>
+      </div>
+    </div>
+
+    <footer class="bg-stone-200 py-7">
+      <div class="container flex flex-col items-center max-w-4xl mx-auto">
+        <div class="flex items-center justify-around mb-8 w-96">
+          <a
+            href="/"
+            class="transition-{color} text-xl text-gray-500 hover:text-gray-600"
+            >dribbble</a
+          >
+          <a
+            href="/"
+            class="transition-{color} text-xl text-gray-500 hover:text-gray-600"
+            >hire me</a
+          >
+          <a
+            href="/"
+            class="transition-{color} text-xl text-gray-500 hover:text-gray-600"
+            >twitter</a
+          >
+        </div>
+        <p class="text-sm">&copy; 2022 Shafi DEV Co. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const header = document.querySelector("header");
+      header.style.transition = "background-color 500ms, top 500ms";
+      let prev = window.pageYOffset;
+      window.onscroll = function () {
+        let current = window.pageYOffset;
+        if (prev > current) header.style.top = "0";
+        else header.style.top = "-150px";
+        if (window.pageYOffset === 0) header.classList.remove("bg-white");
+        else header.classList.add("bg-white");
+        prev = current;
+      };
+    </script>
+  </body>
+</html>
